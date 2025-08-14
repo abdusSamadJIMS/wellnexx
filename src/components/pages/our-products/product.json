@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Welnisol-4",
+        "category": "Tablets",
+        "ingredients": "Methylprednisolone IP 4mg",
+        "price": 49,
+        "image": "/images/products/welnisol-4.png"
+    },
+    {
+        "name": "Welnex-OC Cream",
+        "category": "Cream/Tube",
+        "ingredients": "Ofloxacin 0.75%, Miconazole Nitrate 2.0%, Terbinafine 1.0%, Clobetasol Propionate 0.05%, Dexpanthenol 0.05%",
+        "price": 95,
+        "image": "/images/products/welnex-oc.png"
+    },
+    {
+        "name": "Amilix-LB 625",
+        "category": "Tablets",
+        "ingredients": "Amoxycillin and Potassium Clavulanate with Lactic Acid Bacillus",
+        "price": 295,
+        "image": "/images/products/amilix-lb-625.png"
+    },
+    {
+        "name": "Eeam Cream",
+        "category": "Cream/Tube",
+        "ingredients": "Hydroquinone 2%, Tretinoin 0.025%, Mometasone Furoate 0.1%",
+        "price": 109,
+        "image": "/images/products/eeam.png"
+    },
+    {
+        "name": "PODOXCYN-50 Syrup",
+        "category": "Syrup",
+        "ingredients": "Cefpodoxime Proxetil Eq. to Cefpodoxime 50mg",
+        "price": 92,
+        "image": "/images/products/podoxcyn-50.png"
+    },
+    {
+        "name": "Glowcyn 3D",
+        "category": "Cream/Tube",
+        "ingredients": "As per image",
+        "price": 135,
+        "image": "/images/products/glowcyn-3d.png"
+    },
+    {
+        "name": "Welneem Plus Soap",
+        "category": "Soap",
+        "ingredients": "Aloe Vera, Neem, Tulsi",
+        "price": 85,
+        "image": "/images/products/welneem-plus.png"
+    }
+]
