@@ -6,6 +6,7 @@ import UspsSection from '@/components/pages/about/usp-section'
 import ContactUsCTA from '@/components/pages/home/contact-us-cta'
 import FaqSection from '@/components/pages/home/faq-section'
 import Testimonials from '@/components/pages/home/testimonial'
+import { testimonials } from '@/utils/constant/products'
 import React from 'react'
 
 const page = () => {
@@ -16,7 +17,7 @@ const page = () => {
             <UspsSection />
             <TeamSnapshot />
             {/* <CertificationsSection /> */}
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <ContactUsCTA />
             <FaqSection f={null} />
         </>

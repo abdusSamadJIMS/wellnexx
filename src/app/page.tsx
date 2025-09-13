@@ -10,12 +10,14 @@ import StatsSection from "@/components/pages/home/stats-section";
 import Testimonials from "@/components/pages/home/testimonial";
 import WhoWeServe from "@/components/pages/home/who-we-server";
 import WhyChoose from "@/components/pages/home/why-choose";
-import { getProducts, getTestimonials } from "@/utils/action";
+// import { getProducts, getTestimonials } from "@/utils/action";
+import { products, testimonials } from "@/utils/constant/products";
 
 
 export default async function Home() {
-  const products = await getProducts()
-  const testimonials = await getTestimonials()
+  // const products = await getProducts()
+
+  // const testimonials = await getTestimonials()
   return (
     <>
       <HeroSection />

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+// /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useState, useMemo, SetStateAction } from "react"
@@ -33,7 +33,7 @@ export default function ProductShowcase({ products }: { products: Product[] }) {
             const matchesPrice = product.rate <= price
             return matchesCategory && matchesSearch && matchesPrice
         })
-    }, [search, category, price])
+    }, [search, category, price, products])
 
     return (
         <section className="bg-slate-50 py-16 px-4 md:px-10">

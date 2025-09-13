@@ -172,7 +172,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
                                     <div className="avatar">
                                         <div className="w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden">
                                             <Image
-                                                src={`${process.env.NEXT_PUBLIC_BASE_URL}${t.image}`}
+                                                src={t.image}
                                                 alt={t.name}
                                                 width={40}
                                                 height={40}
