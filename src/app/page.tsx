@@ -35,7 +35,7 @@ export default async function Home() {
       {/* <CertificationsSection /> */}
       <ContactUsCTA />
       <FaqSection f={null} />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </>
   );
 }

@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export interface ProductImage {
-    image: string;
+    image: string | StaticImageData;
     description: string | null;
 }
 

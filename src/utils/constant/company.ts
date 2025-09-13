@@ -1,3 +1,3 @@
 export const companyDetails = {
-    name: "WellPath"
+    name: "WellPath",
 }

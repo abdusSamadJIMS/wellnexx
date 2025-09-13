@@ -7,7 +7,7 @@ const ContactUsCTA = () => {
         <section className="bg-gradient-to-br from-primary/80 to-blue-600 text-white py-20 relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10 text-center">
+            <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10 text-center transition-all">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                     Ready to stock trusted medicines?
                 </h2>
@@ -27,7 +27,7 @@ const ContactUsCTA = () => {
 
                     {/* Contact Page Button */}
                     <Link
-                        href="/contact"
+                        href="/contact-us"
                         className="inline-block border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-primary transition"
                     >
                         Get in Touch

@@ -1,5 +1,30 @@
 import { Product, Testimonial } from "../type";
 
+
+import welnisol_4_1 from "@/../public/images/product_images/wellnisol_4_1.jpg"
+import welnisol_4_3 from "@/../public/images/product_images/wellnisol_4_3.jpg"
+import welnisol_4_2 from "@/../public/images/product_images/wellnisol_4_2.jpg"
+import wellness_plus_1 from "@/../public/images/product_images/wellness_plus_1.jpg"
+import wellness_plus_2 from "@/../public/images/product_images/wellness_plus_2.jpg"
+import wellness_plus_3 from "@/../public/images/product_images/wellness_plus_3.jpg"
+import wellness_plus_4 from "@/../public/images/product_images/wellness_plus_4.jpg"
+import wellness_plus_5 from "@/../public/images/product_images/wellness_plus_5.jpg"
+import wellsovit_gold_1 from "@/../public/images/product_images/wellsovit_gold_1.jpg"
+import wellsovit_gold_2 from "@/../public/images/product_images/wellsovit_gold_2.jpg"
+import wellsovit_gold_3 from "@/../public/images/product_images/wellsovit_gold_3.jpg"
+import glowcyn_1 from "@/../public/images/product_images/glowcyn_1.jpg"
+import pantacyn_dsr_1 from "@/../public/images/product_images/pantacyn_dsr_1.jpg"
+import glowcyn_pro_gel_1 from "@/../public/images/product_images/glowcyn_pro_1.jpg"
+import glowcyn_pro_gel_2 from "@/../public/images/product_images/glowcyn_pro_2.jpg"
+import wellnex_oc_1 from "@/../public/images/product_images/wellnexx_oc_1.jpg"
+import wellnex_oc_2 from "@/../public/images/product_images/wellnexx_oc_2.jpg"
+import wellnex_oc_3 from "@/../public/images/product_images/wellnexx_oc_3.jpg"
+import wellnex_oc_4 from "@/../public/images/product_images/wellnexx_oc_4.jpg"
+import kuffcyn_dx_1 from "@/../public/images/product_images/kuffcyn_dx_1.jpg"
+import kuffcyn_dx_2 from "@/../public/images/product_images/kuffcyn_dx_2.jpg"
+import kuffcyn_dx_3 from "@/../public/images/product_images/kuffcyn_dx_3.jpg"
+import kuffcyn_dx_4 from "@/../public/images/product_images/kuffcyn_dx_4.jpg"
+
 export const products: Product[] = [
     {
         name: "Welnisol-4",
@@ -11,7 +36,17 @@ export const products: Product[] = [
         compositions: ["Methylprednisolone IP 4mg"],
         images: [
             {
-                image: "https://placehold.co/600x400",
+                image: welnisol_4_1,
+                description:
+                    "It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis",
+            },
+            {
+                image: welnisol_4_2,
+                description:
+                    "It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis",
+            },
+            {
+                image: welnisol_4_3,
                 description:
                     "It is used to treat a number of different conditions, such as inflammation (swelling), severe allergies, adrenal problems, arthritis",
             },
@@ -27,25 +62,188 @@ export const products: Product[] = [
         compositions: ["Neem Aloevera & Tulsi"],
         images: [
             {
-                image: "https://placehold.co/600x400",
+                image: wellness_plus_1,
+                description:
+                    "Neem is known for its antibacterial and antifungal properties, helping to fight acne and skin infections. Aloe vera provides moisturization and soothes the skin, while tulsi is known for its anti-inflammatory and antioxidant benefits.",
+            },
+            {
+                image: wellness_plus_2,
+                description:
+                    "Neem is known for its antibacterial and antifungal properties, helping to fight acne and skin infections. Aloe vera provides moisturization and soothes the skin, while tulsi is known for its anti-inflammatory and antioxidant benefits.",
+            },
+            {
+                image: wellness_plus_3,
+                description:
+                    "Neem is known for its antibacterial and antifungal properties, helping to fight acne and skin infections. Aloe vera provides moisturization and soothes the skin, while tulsi is known for its anti-inflammatory and antioxidant benefits.",
+            },
+            {
+                image: wellness_plus_4,
+                description:
+                    "Neem is known for its antibacterial and antifungal properties, helping to fight acne and skin infections. Aloe vera provides moisturization and soothes the skin, while tulsi is known for its anti-inflammatory and antioxidant benefits.",
+            },
+            {
+                image: wellness_plus_5,
                 description:
                     "Neem is known for its antibacterial and antifungal properties, helping to fight acne and skin infections. Aloe vera provides moisturization and soothes the skin, while tulsi is known for its anti-inflammatory and antioxidant benefits.",
             },
         ],
     },
     {
-        name: "Podoxcyn-50",
-        product_code: "Podoxcyn-50",
-        product_name: "Podoxcyn-50 Dry Syrup",
-        rate: 92,
-        pack: "10g/30ml Dry Syrup",
-        drug_category: "Antibiotic",
-        compositions: ["Cefpodoxime 50mg"],
+        name: "Welsovit Gold",
+        product_code: "Welsovit-Gold",
+        product_name: "Welsovit Gold Syrup",
+        rate: 239,
+        pack: "200ml Syrup",
+        drug_category: "Syrup",
+        compositions: ["Multivitamins & Minerals (as per RDA values)"],
         images: [
             {
-                image: "https://placehold.co/600x400",
+                image: wellsovit_gold_1,
                 description:
-                    "Cefpodoxime is used to treat bacterial infections in many different parts of the body",
+                    "Nutritional syrup with vitamins, minerals, amino acids, and antioxidants.",
+            },
+            {
+                image: wellsovit_gold_2,
+                description:
+                    "Nutritional syrup with vitamins, minerals, amino acids, and antioxidants.",
+            },
+            {
+                image: wellsovit_gold_3,
+                description:
+                    "Nutritional syrup with vitamins, minerals, amino acids, and antioxidants.",
+            },
+        ],
+    },
+    {
+        name: "Glowcyn",
+        product_code: "Glowcyn",
+        product_name: "Glowcyn Cream",
+        rate: 109,
+        pack: "15g Tube",
+        drug_category: "Cream",
+        compositions: [
+            "Hydroquinone U.S.P. 2.00% w/w",
+            "Tretinoin U.S.P. 0.025% w/w",
+            "Mometasone Furoate I.P. 0.1% w/w",
+        ],
+        images: [
+            {
+                image: glowcyn_1,
+                description:
+                    "Triple combination cream for melasma. Helps lighten dark spots, reduce inflammation, and improve skin tone and texture.",
+            },
+        ],
+    },
+    {
+        name: "Pantacyn-DSR",
+        product_code: "Pantacyn-DSR",
+        product_name: "Pantacyn-DSR Capsule",
+        rate: 150,
+        pack: "10x10 Capsule",
+        drug_category: "DSR",
+        compositions: [
+            "Pantoprazole IP 40mg",
+            "Domperidone IP 30mg",
+        ],
+        images: [
+            {
+                image: pantacyn_dsr_1,
+                description:
+                    "Pantoprazole is used to treat conditions with excess stomach acid.",
+            },
+        ],
+    },
+    {
+        name: "Glowcyn Pro Gel",
+        product_code: "Glowcyn-Pro-Gel",
+        product_name: "Glowcyn Pro Gel",
+        rate: 179,
+        pack: "15g Gel Cream",
+        drug_category: "Skin Care",
+        compositions: [
+            "Kojic Acid Dipalmitate",
+            "Pine Bark Extract",
+            "Arbutin",
+            "Allantoin",
+            "Vitamin E Acetate",
+            "Niacinamide",
+            "Octinoxate",
+        ],
+        images: [
+            {
+                image: glowcyn_pro_gel_1,
+                description: "Skin care gel with Kojic Acid and antioxidants.",
+            },
+            {
+                image: glowcyn_pro_gel_2,
+                description: "Skin care gel with Kojic Acid and antioxidants.",
+            },
+        ],
+    },
+    {
+        name: "Welnex-OC",
+        product_code: "Welnex-OC",
+        product_name: "Welnex-OC Cream",
+        rate: 95,
+        pack: "15g Cream",
+        drug_category: "Anti-allergic",
+        compositions: [
+            "Ofloxacin IP 0.75% w/w",
+            "Miconazole Nitrate IP 2.0% w/w",
+            "Terbinafine Hydrochloride IP 1.0% w/w",
+            "Clobetasol Propionate IP 0.05% w/w",
+            "Dexpanthenol USP 0.05% w/w",
+        ],
+        images: [
+            {
+                image: wellnex_oc_1,
+                description:
+                    "Used to treat various skin infections caused by bacteria and fungi.",
+            },
+            {
+                image: wellnex_oc_2,
+                description:
+                    "Used to treat various skin infections caused by bacteria and fungi.",
+            },
+            {
+                image: wellnex_oc_3,
+                description:
+                    "Used to treat various skin infections caused by bacteria and fungi.",
+            },
+            {
+                image: wellnex_oc_4,
+                description:
+                    "Used to treat various skin infections caused by bacteria and fungi.",
+            },
+        ],
+    },
+    {
+        name: "Kuffcyn-DX",
+        product_code: "Kuffcyn-DX",
+        product_name: "Kuffcyn-DX Syrup",
+        rate: 105,
+        pack: "100ml Syrup",
+        drug_category: "Syrup",
+        compositions: [
+            "Dextromethorphan hydrobromide IP 10mg",
+            "Chlorpheniramine Maleate IP 4mg",
+        ],
+        images: [
+            {
+                image: kuffcyn_dx_1,
+                description: "For Dry Cough, Sore Throat and cold",
+            },
+            {
+                image: kuffcyn_dx_2,
+                description: "For Dry Cough, Sore Throat and cold",
+            },
+            {
+                image: kuffcyn_dx_3,
+                description: "For Dry Cough, Sore Throat and cold",
+            },
+            {
+                image: kuffcyn_dx_4,
+                description: "For Dry Cough, Sore Throat and cold",
             },
         ],
     },
@@ -70,7 +268,7 @@ export const products: Product[] = [
         ],
     },
     {
-        name: "Amilix -CV",
+        name: "Amilix-CV",
         product_code: "Amilix-CV",
         product_name: "Amilix -CV Dry Syrup",
         rate: 67.87,
@@ -88,24 +286,7 @@ export const products: Product[] = [
             },
         ],
     },
-    {
-        name: "Kuffcyn-DX",
-        product_code: "Kuffcyn-DX",
-        product_name: "Kuffcyn-DX Syrup",
-        rate: 105,
-        pack: "100ml Syrup",
-        drug_category: "Syrup",
-        compositions: [
-            "Dextromethorphan hydrobromide IP 10mg",
-            "Chlorpheniramine Maleate IP 4mg",
-        ],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description: "For Dry Cough, Sore Throat and cold",
-            },
-        ],
-    },
+
     {
         name: "Weljoy",
         product_code: "Weljoy",
@@ -121,26 +302,7 @@ export const products: Product[] = [
             },
         ],
     },
-    {
-        name: "Glowcyn",
-        product_code: "Glowcyn",
-        product_name: "Glowcyn Cream",
-        rate: 109,
-        pack: "15g Tube",
-        drug_category: "Cream",
-        compositions: [
-            "Hydroquinone U.S.P. 2.00% w/w",
-            "Tretinoin U.S.P. 0.025% w/w",
-            "Mometasone Furoate I.P. 0.1% w/w",
-        ],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description:
-                    "Triple combination cream for melasma. Helps lighten dark spots, reduce inflammation, and improve skin tone and texture.",
-            },
-        ],
-    },
+
     {
         name: "Mefiwel-D",
         product_code: "Mefiwel-D",
@@ -160,86 +322,10 @@ export const products: Product[] = [
             },
         ],
     },
-    {
-        name: "Pantacyn-DSR",
-        product_code: "Pantacyn-DSR",
-        product_name: "Pantacyn-DSR Capsule",
-        rate: 150,
-        pack: "10x10 Capsule",
-        drug_category: "DSR",
-        compositions: [
-            "Pantoprazole IP 40mg",
-            "Domperidone IP 30mg",
-        ],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description:
-                    "Pantoprazole is used to treat conditions with excess stomach acid.",
-            },
-        ],
-    },
-    {
-        name: "Welnex-OC",
-        product_code: "Welnex-OC",
-        product_name: "Welnex-OC Cream",
-        rate: 95,
-        pack: "15g Cream",
-        drug_category: "Anti-allergic",
-        compositions: [
-            "Ofloxacin IP 0.75% w/w",
-            "Miconazole Nitrate IP 2.0% w/w",
-            "Terbinafine Hydrochloride IP 1.0% w/w",
-            "Clobetasol Propionate IP 0.05% w/w",
-            "Dexpanthenol USP 0.05% w/w",
-        ],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description:
-                    "Used to treat various skin infections caused by bacteria and fungi.",
-            },
-        ],
-    },
-    {
-        name: "Glowcyn Pro Gel",
-        product_code: "Glowcyn-Pro-Gel",
-        product_name: "Glowcyn Pro Gel",
-        rate: 179,
-        pack: "15g Gel Cream",
-        drug_category: "Skin Care",
-        compositions: [
-            "Kojic Acid Dipalmitate",
-            "Pine Bark Extract",
-            "Arbutin",
-            "Allantoin",
-            "Vitamin E Acetate",
-            "Niacinamide",
-            "Octinoxate",
-        ],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description: "Skin care gel with Kojic Acid and antioxidants.",
-            },
-        ],
-    },
-    {
-        name: "Welsovit Gold",
-        product_code: "Welsovit-Gold",
-        product_name: "Welsovit Gold Syrup",
-        rate: 239,
-        pack: "200ml Syrup",
-        drug_category: "Syrup",
-        compositions: ["Multivitamins & Minerals (as per RDA values)"],
-        images: [
-            {
-                image: "https://placehold.co/600x400",
-                description:
-                    "Nutritional syrup with vitamins, minerals, amino acids, and antioxidants.",
-            },
-        ],
-    },
+
+
+
+
     {
         name: "Liv Rectify DS",
         product_code: "Liv-Rectify-DS",
@@ -272,6 +358,22 @@ export const products: Product[] = [
                 image: "https://placehold.co/600x400",
                 description:
                     "Analgesic, anti-swelling, and anti-inflammatory tablet.",
+            },
+        ],
+    },
+    {
+        name: "Podoxcyn-50",
+        product_code: "Podoxcyn-50",
+        product_name: "Podoxcyn-50 Dry Syrup",
+        rate: 92,
+        pack: "10g/30ml Dry Syrup",
+        drug_category: "Antibiotic",
+        compositions: ["Cefpodoxime 50mg"],
+        images: [
+            {
+                image: "https://placehold.co/600x400",
+                description:
+                    "Cefpodoxime is used to treat bacterial infections in many different parts of the body",
             },
         ],
     },

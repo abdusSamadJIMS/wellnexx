@@ -14,7 +14,7 @@ export default function ProductGallery({ images }: Props) {
                     src={images[index]?.image || 'https://placehold.co/600x400'}
                     alt={images[index]?.description || 'product image'}
                     fill
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'contain' }}
                     sizes="(max-width: 640px) 100vw, 50vw"
                     priority={true}
                 />

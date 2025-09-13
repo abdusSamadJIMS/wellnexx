@@ -1,9 +1,7 @@
 
-import AddToCartButton from '@/components/AddToCart'
 import ProductGallery from '@/components/ProductGallery'
 import { products } from '@/utils/constant/products'
 import { formatINR } from '@/utils/constant/utils'
-import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {

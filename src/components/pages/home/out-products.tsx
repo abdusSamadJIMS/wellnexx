@@ -49,7 +49,8 @@ const OurProducts = ({ products }: { products: Product[] }) => {
                 {/* Product Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {products.slice(0, 4).map((product, idx) => (
-                        <div
+                        <Link
+                            href={`/our-products/${product.product_code.toLowerCase()}`}
                             key={idx}
                             className="bg-white/90 backdrop-blur-md border border-gray-200 hover:border-primary rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 group"
                         >
@@ -67,7 +68,7 @@ const OurProducts = ({ products }: { products: Product[] }) => {
                                 <p className="text-sm text-gray-600">{product.compositions.join(', ')}</p>
                                 <p className="text-sm text-gray-500">{product.pack}</p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

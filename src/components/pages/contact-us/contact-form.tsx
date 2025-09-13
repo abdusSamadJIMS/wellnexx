@@ -4,12 +4,57 @@ import { useState } from 'react'
 import { Send } from 'lucide-react'
 
 const ContactForm = () => {
-    const [submitted, setSubmitted] = useState(false)
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const [submitted, setSubmitted] = useState(false)
+    const [error, setError] = useState('')
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target
+        setFormData(prev => ({ ...prev, [name]: value }))
+    }
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        // TODO: API call logic
-        setSubmitted(true)
+        setError('')
+
+        const data = new URLSearchParams(formData as Record<string, string>)
+
+        try {
+            const response = await fetch(
+                'https://script.google.com/macros/s/AKfycbx5oJuU9-H24lozMXraASl8_lGfUQejKxVjqOX24Ahd-nA9VDWB6vgTwJ4A7uKxlgzwYQ/exec',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: data.toString(),
+                }
+            )
+
+            const text = await response.text()
+            console.log('Response from Apps Script:', text)
+
+            if (text.includes('Success')) {
+                setSubmitted(true)
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: '',
+                })
+            } else {
+                setError('Failed to send message. Please try again.')
+            }
+        } catch (err) {
+            console.error(err)
+            setError('Error sending message. Please try again.')
+        }
     }
 
     return (
@@ -38,6 +83,9 @@ const ContactForm = () => {
                             <label className="label font-semibold text-gray-700">Name</label>
                             <input
                                 type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
                                 placeholder="Your full name"
                                 required
                                 className="input input-bordered w-full transition-all focus:ring-2 focus:ring-primary/60"
@@ -49,6 +97,9 @@ const ContactForm = () => {
                             <label className="label font-semibold text-gray-700">Email</label>
                             <input
                                 type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 placeholder="you@example.com"
                                 required
                                 className="input input-bordered w-full transition-all focus:ring-2 focus:ring-primary/60"
@@ -60,6 +111,9 @@ const ContactForm = () => {
                             <label className="label font-semibold text-gray-700">Subject (Optional)</label>
                             <input
                                 type="text"
+                                name="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
                                 placeholder="e.g. Inquiry about partnership"
                                 className="input input-bordered w-full transition-all focus:ring-2 focus:ring-primary/60"
                             />
@@ -69,6 +123,9 @@ const ContactForm = () => {
                         <div className="form-control col-span-1 md:col-span-2">
                             <label className="label font-semibold text-gray-700">Message</label>
                             <textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 placeholder="Write your message here..."
                                 rows={6}
                                 required
@@ -86,6 +143,13 @@ const ContactForm = () => {
                                 Send Message
                             </button>
                         </div>
+
+                        {/* Error */}
+                        {error && (
+                            <div className="col-span-1 md:col-span-2 text-center mt-4 text-red-600 font-medium">
+                                {error}
+                            </div>
+                        )}
                     </form>
                 )}
             </div>

@@ -5,6 +5,7 @@ import browseIcon from '@/../public/images/icons/browse.png'
 import quoteIcon from '@/../public/images/icons/quote-right.png'
 import confirmIcon from '@/../public/images/icons/confirmation.png'
 import deliveryIcon from '@/../public/images/icons/delivery.png'
+import Link from 'next/link'
 
 const steps = [
     {
@@ -91,9 +92,9 @@ const HowToOrder = () => {
 
                 {/* CTA */}
                 <div className="text-center mt-20">
-                    <button className="btn btn-primary btn-wide text-white text-base shadow-md hover:scale-105 transition-transform">
+                    <Link href={'/contact-us'} className="btn btn-primary btn-wide text-white text-base shadow-md hover:scale-105 transition-transform">
                         Start Your Order
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>
