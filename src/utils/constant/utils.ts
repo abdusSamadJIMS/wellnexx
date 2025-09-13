@@ -6,3 +6,8 @@ import { twMerge } from 'tailwind-merge'
 export function cn(...inputs: any[]) {
     return twMerge(clsx(inputs))
 }
+
+
+export const formatINR = (v: number) => {
+    return v.toLocaleString("en-IN", { style: "currency", currency: "INR" });
+};

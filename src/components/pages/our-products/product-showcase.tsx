@@ -6,6 +6,7 @@ import { useState, useMemo, SetStateAction } from "react"
 // import products from "./product.json"
 import Image from "next/image"
 import { Product } from "@/utils/type"
+import Link from "next/link"
 
 // const categories = ["All", "Tablets", "Cream/Tube", "Soap", "Syrup", "Sexual", "Kids"]
 
@@ -86,7 +87,9 @@ export default function ProductShowcase({ products }: { products: Product[] }) {
                 ) : (
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {filteredProducts.map((product, idx: number) => (
-                            <div
+                            <Link
+
+                                href={`/our-products/${product.product_code.toLowerCase()}`}
                                 key={product.name + idx}
                                 className="card bg-white shadow hover:shadow-lg transition rounded-xl overflow-hidden"
                             >
@@ -115,11 +118,11 @@ export default function ProductShowcase({ products }: { products: Product[] }) {
                                     <p className="text-sm text-gray-500 mb-2 truncate">{product.compositions.join(', ')}</p>
                                     <div className="font-bold text-primary">₹{product.rate}</div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 )}
             </div>
-        </section>
+        </section >
     )
 }

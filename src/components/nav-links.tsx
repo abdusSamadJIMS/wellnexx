@@ -14,10 +14,10 @@ const links = [
         label: "Our Products",
         href: "/our-products"
     },
-    {
-        label: "Career",
-        href: "/career"
-    },
+    // {
+    //     label: "Career",
+    //     href: "/career"
+    // },
     {
         label: "Contact Us",
         href: "/contact-us"
