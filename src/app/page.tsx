@@ -1,4 +1,4 @@
-import BlogSection from "@/components/pages/home/blog-section";
+// import BlogSection from "@/components/pages/home/blog-section";
 // import CertificationsSection from "@/components/pages/home/certification-section";
 import ContactUsCTA from "@/components/pages/home/contact-us-cta";
 import FaqSection from "@/components/pages/home/faq-section";
