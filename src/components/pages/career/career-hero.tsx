@@ -24,7 +24,7 @@ const CareerHeroSection = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-                    At Welnex Life Science, we’re redefining healthcare through trust, innovation, and teamwork.
+                    At Wellnex pharmaceutical Life Science, we’re redefining healthcare through trust, innovation, and teamwork.
                     If you&apos;re passionate about purpose and impact — you belong here.
                 </p>
 
