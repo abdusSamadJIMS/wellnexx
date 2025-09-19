@@ -1,5 +1,6 @@
 'use client'
 
+import { companyDetails } from '@/utils/constant/company'
 import Link from 'next/link'
 
 const ContactUsCTA = () => {
@@ -17,7 +18,7 @@ const ContactUsCTA = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     {/* WhatsApp Button */}
                     <a
-                        href="https://wa.me/919876543210" // Replace with your actual WhatsApp number
+                        href={`https://wa.me/${companyDetails.whatsapp}`} // Replace with your actual WhatsApp number
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"

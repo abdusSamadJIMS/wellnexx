@@ -1,5 +1,6 @@
 'use client'
 
+import { companyDetails } from '@/utils/constant/company'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 const ContactInfo = () => {
@@ -18,7 +19,7 @@ const ContactInfo = () => {
                             <Phone className="text-primary w-6 h-6 mt-1" />
                             <div>
                                 <p className="text-sm text-gray-500">Call Us</p>
-                                <p className="font-medium text-gray-800">+91 95680 96888, +91 96909 64798</p>
+                                <p className="font-medium text-gray-800">{companyDetails.phone}</p>
                             </div>
                         </div>
 
@@ -26,7 +27,7 @@ const ContactInfo = () => {
                             <Mail className="text-primary w-6 h-6 mt-1" />
                             <div>
                                 <p className="text-sm text-gray-500">Email</p>
-                                <p className="font-medium text-gray-800">support@wellpath.in</p>
+                                <p className="font-medium text-gray-800">{companyDetails.mail}</p>
                             </div>
                         </div>
 

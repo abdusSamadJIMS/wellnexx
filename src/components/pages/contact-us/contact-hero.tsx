@@ -1,5 +1,6 @@
 'use client'
 
+import { companyDetails } from '@/utils/constant/company'
 import { MoveDownRight, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
 
@@ -21,7 +22,7 @@ const ContactHero = () => {
                     </a>
 
                     <Link
-                        href="https://wa.me/919999999999"
+                        href={`https://wa.me/${companyDetails.whatsapp}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-outline border-gray-300 text-gray-700 hover:border-green-500 hover:text-green-600"

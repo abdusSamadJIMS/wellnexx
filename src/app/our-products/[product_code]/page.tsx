@@ -1,5 +1,6 @@
 
 import ProductGallery from '@/components/ProductGallery'
+import { companyDetails } from '@/utils/constant/company'
 import { products } from '@/utils/constant/products'
 import { formatINR } from '@/utils/constant/utils'
 import { notFound } from 'next/navigation'
@@ -83,7 +84,7 @@ export default async function ProductPage({
 
                     <div className="mt-4 flex gap-3">
                         <a
-                            href={`https://wa.me/919568096888?text=Enquiry of ${product.name}`}
+                            href={`https://wa.me/${companyDetails.whatsapp}?text=Enquiry of ${product.name}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-md border"

@@ -387,7 +387,7 @@ export const testimonials: Testimonial[] = [
         name1: "Aditi Sharma",
         designation: "Dermatologist",
         message:
-            "Wellnex products have shown consistent results with my patients. The formulations are safe, effective, and trusted by many in my clinic.",
+            "Wellnex pharmaceutical products have shown consistent results with my patients. The formulations are safe, effective, and trusted by many in my clinic.",
         image: "https://placehold.co/600x400",
         city: "Mumbai",
     },
@@ -396,7 +396,7 @@ export const testimonials: Testimonial[] = [
         name1: "Rahul Mehta",
         designation: "Pharmacy Owner",
         message:
-            "Our customers are very happy with Wellnex medicines and wellness products. They are affordable without compromising on quality.",
+            "Our customers are very happy with Wellnex pharmaceutical medicines and wellness products. They are affordable without compromising on quality.",
         image: "https://placehold.co/600x400",
         city: "Delhi",
     },
@@ -405,7 +405,7 @@ export const testimonials: Testimonial[] = [
         name1: "Neha Kapoor",
         designation: "General Physician",
         message:
-            "I recommend Wellnex antibiotics and syrups to my patients. The trust and reliability of the brand make my job easier.",
+            "I recommend Wellnex pharmaceutical antibiotics and syrups to my patients. The trust and reliability of the brand make my job easier.",
         image: "https://placehold.co/600x400",
         city: "Bengaluru",
     },
@@ -414,7 +414,7 @@ export const testimonials: Testimonial[] = [
         name1: "Vikram Singh",
         designation: "Medical Store Owner",
         message:
-            "Stocking Wellnex products has boosted my pharmacy sales. Customers keep coming back for the quality and results.",
+            "Stocking Wellnex pharmaceutical products has boosted my pharmacy sales. Customers keep coming back for the quality and results.",
         image: "https://placehold.co/600x400",
         city: "Jaipur",
     },
@@ -423,7 +423,7 @@ export const testimonials: Testimonial[] = [
         name1: "Rina Das",
         designation: "Pediatrician",
         message:
-            "I trust Wellnex syrups and tonics for children. They are safe, effective, and formulated with great care.",
+            "I trust Wellnex pharmaceutical syrups and tonics for children. They are safe, effective, and formulated with great care.",
         image: "https://placehold.co/600x400",
         city: "Kolkata",
     },
