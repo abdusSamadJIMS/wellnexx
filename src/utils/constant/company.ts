@@ -1,6 +1,6 @@
 export const companyDetails = {
     name: "WellPath",
-    mail: "wellpath50@gmail.com",
+    mail: "support@wellpathpharmaceuticals.com",
     phone: "+919690964798",
     whatsapp: "919690964798"
 }
