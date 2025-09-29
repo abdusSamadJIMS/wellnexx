@@ -36,8 +36,8 @@ const ContactInfo = () => {
                             <div>
                                 <p className="text-sm text-gray-500">Address</p>
                                 <p className="font-medium text-gray-800">
-                                    WellPath Pharmaceuticals, 2nd Floor, Orion Complex,<br />
-                                    MG Road, Lucknow, UP 226001, India
+                                    WellPath Pharmaceuticals,<br />
+                                    Chakrota Road, UP 247001, India
                                 </p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const ContactInfo = () => {
                 <div className="rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         title="WellPath Map Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.6123920372895!2d80.93430741498704!3d26.76113698319764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1a3e6b7a4f%3A0xa2c5a0c476f1f5a!2sLucknow%20Center!5e0!3m2!1sen!2sin!4v1713029480123!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55304.79599295493!2d77.51522754361177!3d29.963627040582686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eea921f841f45%3A0x39baf780903811f!2sSaharanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1759161282359!5m2!1sen!2sin"
                         width="100%"
                         height="400"
                         style={{ border: 0 }}
